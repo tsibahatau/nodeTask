@@ -1,10 +1,10 @@
 const express = require('express');
 const port = process.env.PORT || 3000;
-const userController = require('./controllers/UserController');
-const articlesController = require('./controllers/ArticlesController');
-const commentsController = require('./controllers/CommentsController');
-const authController = require('./controllers/AuthController');
-const databaseConfig = require('./config/database');
+const userController = require('./src/controllers/UserController');
+const articlesController = require('./src/controllers/ArticlesController');
+const commentsController = require('./src/controllers/CommentsController');
+const authController = require('./src/controllers/AuthController');
+const databaseConfig = require('./src/config/database');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
