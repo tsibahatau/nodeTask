@@ -1,3 +1,3 @@
 exports.mongo = {
-    url: 'mongodb://localhost/blog',
+  url: 'mongodb://localhost/blog',
 };

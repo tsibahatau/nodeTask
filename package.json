@@ -4,7 +4,8 @@
   "description": "node task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": " eslint src --ext .js"
   },
   "author": "Tsimur",
   "license": "ISC",
@@ -20,6 +21,9 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.1"
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-require": "0.0.1"
   }
 }

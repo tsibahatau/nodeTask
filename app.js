@@ -20,12 +20,10 @@ app.use(bodyParser.urlencoded({
 // Use the passport package in our application
 app.use(passport.initialize());
 app.use(passport.session());
-
 passport.serializeUser(function(user, done) {
     const sessionUser = { _id: user._id,  email: user.email }
     done(null, sessionUser)
 });
-
 passport.deserializeUser(function(sessionUser, done) {
     done(null, sessionUser)
 });
